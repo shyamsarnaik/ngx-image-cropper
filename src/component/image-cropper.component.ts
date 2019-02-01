@@ -16,11 +16,11 @@ export type OutputType = 'base64' | 'file' | 'both';
     changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ImageCropperComponent implements OnChanges {
-    private originalImage: any;
-    private originalBase64: string;
+    public originalImage: any;
+    public originalBase64: string;
     private moveStart: MoveStart;
     private maxSize: Dimensions;
-    private originalSize: Dimensions;
+    public originalSize: Dimensions;
     private setImageMaxSizeRetries = 0;
     private cropperScaledMinWidth = 20;
     private cropperScaledMinHeight = 20;
